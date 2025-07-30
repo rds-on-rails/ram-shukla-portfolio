@@ -3,284 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Shukla - Personal Website</title>
+    <title>Ram Shukla | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">Ram Shukla</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ram Shukla</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Ram Shukla</span></h1>
-            <p class="subtitle">Professional Title Here</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn primary">Get In Touch</a>
-                <a href="#about" class="btn secondary">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Experienced Software Engineer with over 13+ years in enterprise application development and team leadership. I specialize in Java-based technologies, full-stack development, and have recently expanded into AI/ML integration projects.</p>
-                    <p>Throughout my career, I've successfully delivered solutions for major companies including TripAdvisor, Booking.com, HomeAway, and innovative platforms like Akshaya.io (Metaverse/NFT). I excel at leading cross-functional teams, managing complex project lifecycles, and delivering scalable solutions that drive business growth.</p>
-                    <p>Currently leading AI/ML integration initiatives at Kyyte, focusing on SAP ecosystem enhancements and strategic project management.</p>
-                </div>
-                <div class="skills">
-                    <h3>Skills & Technologies</h3>
-                    <div class="skill-categories">
-                        <div class="skill-category">
-                            <h4>Programming Languages</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">SQL</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frameworks & Libraries</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Spring 3.1</span>
-                                <span class="tag">Hibernate 5.1</span>
-                                <span class="tag">Angular JS</span>
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Wicket 1.4</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Databases & Cloud</h4>
-                            <div class="skill-tags">
-                                <span class="tag">SQL Server</span>
-                                <span class="tag">Oracle 10g/9i</span>
-                                <span class="tag">Microsoft Azure</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Technologies & Tools</h4>
-                            <div class="skill-tags">
-                                <span class="tag">REST APIs</span>
-                                <span class="tag">SOAP</span>
-                                <span class="tag">JSON</span>
-                                <span class="tag">XML</span>
-                                <span class="tag">Quartz Scheduler</span>
-                                <span class="tag">JMS</span>
-                                <span class="tag">SOLR</span>
-                                <span class="tag">AI/ML Integration</span>
-                            </div>
-                        </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Ram Shukla</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Senior Software Engineer & AI/ML Integration Specialist
+                    </p>
+                    <p class="hero-description">
+                        14+ years of experience building enterprise applications for major companies including TripAdvisor, Booking.com, and HomeAway. Currently leading AI/ML integration projects at Kyyte.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">May 2024 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Kyyte</h3>
-                        <p class="role">Project Lead - AI/ML Integration</p>
-                        <p>Leading comprehensive project planning including timelines, resource allocation, and risk management strategies. Spearheading AI/ML integration projects within SAP ecosystem.</p>
-                        <div class="portfolio-tech">
-                            <span>AI/ML Integration</span>
-                            <span>SAP</span>
-                            <span>Project Management</span>
-                            <span>Team Leadership</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- About Section - Will be loaded from about.html -->
+    <div id="about-section"></div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Apr 2022 - Oct 2023</div>
-                    <div class="timeline-content">
-                        <h3>Akshaya.io</h3>
-                        <p class="role">Senior Software Engineer</p>
-                        <p>First-ever platform bringing Metaverse, NFT, and Digital Twin together to enable users to claim ownership of physical + digital assets with certified proof of authenticity.</p>
-                        <div class="portfolio-tech">
-                            <span>Java</span>
-                            <span>Next.js</span>
-                            <span>SQL Server</span>
-                            <span>Spring 3.1</span>
-                            <span>Hibernate 5.1</span>
-                            <span>Angular JS</span>
-                            <span>REST APIs</span>
-                            <span>JSON</span>
-                        </div>
-                        <p class="team-size">Team Size: 10</p>
-                    </div>
-                </div>
+    <!-- Experience Section - Will be loaded from experience.html -->
+    <div id="experience-section"></div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Feb 2016 - Apr 2022</div>
-                    <div class="timeline-content">
-                        <h3>Asset Management Platform</h3>
-                        <p class="role">Senior Software Engineer</p>
-                        <p>AM Panorama - A comprehensive platform for managing alternative assets across their lifecycle from origination and underwriting to post-closure portfolio management and reporting. Served real estate lenders, investors, lending platforms and asset managers.</p>
-                        <div class="achievements">
-                            <ul>
-                                <li>Onboarded multiple clients including top banking institutions and Debt funds</li>
-                                <li>Managed release planning and build deployment on client instances</li>
-                                <li>Handled code review, code management, and QA processes</li>
-                                <li>Provisioned new machines over Microsoft Azure</li>
-                                <li>Led client calls and requirement gathering</li>
-                            </ul>
-                        </div>
-                        <div class="portfolio-tech">
-                            <span>Java</span>
-                            <span>Angular JS</span>
-                            <span>SQL Server</span>
-                            <span>Spring 3.1</span>
-                            <span>Hibernate 5.1</span>
-                            <span>REST APIs</span>
-                            <span>Microsoft Azure</span>
-                        </div>
-                        <p class="team-size">Team Size: 10</p>
-                    </div>
-                </div>
+    <!-- Projects Section - Will be loaded from projects.html -->
+    <div id="projects-section"></div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Oct 2014 - Sep 2016</div>
-                    <div class="timeline-content">
-                        <h3>HomeAway</h3>
-                        <p class="role">Team Lead</p>
-                        <p>Led a team of 5 members in developing and maintaining HomeAway's platform. Focused on technical documentation, coding, and resolving UAT & Production issues.</p>
-                        <div class="portfolio-tech">
-                            <span>Java</span>
-                            <span>Oracle 10g</span>
-                            <span>Spring 3.1</span>
-                            <span>Quartz Scheduler</span>
-                            <span>REST APIs</span>
-                            <span>JSON</span>
-                            <span>Multithreading</span>
-                            <span>XML</span>
-                        </div>
-                        <p class="team-size">Team Size: 6</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Jul 2014 - Oct 2014</div>
-                    <div class="timeline-content">
-                        <h3>TripAdvisor - ReviewConnect & Flipkey</h3>
-                        <p class="role">Senior Software Engineer</p>
-                        <p>Promoted to Senior Software Engineer to handle technical dialogue with clients. Specialized in technical documentation and production issue resolution.</p>
-                        <div class="portfolio-tech">
-                            <span>Java</span>
-                            <span>Oracle 10g</span>
-                            <span>Spring 3.1</span>
-                            <span>Quartz Scheduler</span>
-                            <span>Web Services</span>
-                            <span>JSON</span>
-                        </div>
-                        <p class="team-size">Team Size: 3</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Nov 2013 - Jun 2014</div>
-                    <div class="timeline-content">
-                        <h3>Booking.com</h3>
-                        <p class="role">Software Engineer</p>
-                        <p>Developed and maintained booking platform systems. Mentored junior team members and handled technical documentation and production support.</p>
-                        <div class="portfolio-tech">
-                            <span>Java</span>
-                            <span>Oracle 10g</span>
-                            <span>Spring 3.1</span>
-                            <span>Quartz Scheduler</span>
-                            <span>SOAP</span>
-                            <span>XML</span>
-                            <span>HTTPS</span>
-                        </div>
-                        <p class="team-size">Team Size: 3</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Mar 2011 - Jul 2013</div>
-                    <div class="timeline-content">
-                        <h3>BookWyse (CMS)</h3>
-                        <p class="role">Software Engineer</p>
-                        <p>BookWyse Standard Booking Engine Module - A first-class standalone online booking solution for the hospitality industry. Premier online booking engine that converts browsers into guests.</p>
-                        <div class="portfolio-tech">
-                            <span>Java 1.6</span>
-                            <span>Oracle 9i</span>
-                            <span>JMS</span>
-                            <span>Wicket 1.4</span>
-                            <span>log4j</span>
-                            <span>SOLR</span>
-                            <span>MDC</span>
-                            <span>JUnit</span>
-                        </div>
-                        <p class="team-size">Team Size: 12</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills & Expertise</h2>
-            <div class="skills-grid">
-                <!-- Skills will be dynamically added here -->
-            </div>
-        </div>
-    </section>
-
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <form id="contact-form">
+                <div class="contact-info">
+                    <p>I'm always interested in new opportunities and exciting projects. Let's connect and discuss how we can work together.</p>
+                    <div class="contact-links">
+                        <a href="mailto:ram.shukla@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>ram.shukla@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ramshukla" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ramshukla" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
                 <p>&copy; 2025 Ram Shukla. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Load modular components
+        async function loadComponent(componentPath, targetElementId) {
+            try {
+                const response = await fetch(componentPath);
+                const html = await response.text();
+                document.getElementById(targetElementId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading component ${componentPath}:`, error);
+            }
+        }
+
+        // Load all components when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('about.html', 'about-section');
+            loadComponent('experience.html', 'experience-section');
+            loadComponent('projects.html', 'projects-section');
+        });
+    </script>
 </body>
 </html>
